@@ -4,7 +4,7 @@ function Buttons({ isSubmitting, label }) {
   return (
     <button
       className="bg-blue-500 text-white 
-px-2 py-1 border w-full rounded-md hover:cursor-pointer"
+px-2 py-1 rounded-md hover:cursor-pointer"
     >
       {
       isSubmitting 

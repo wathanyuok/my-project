@@ -1,7 +1,6 @@
-function NotFound() {
-  return (
-    <div>NotFound</div>
-  )
-}
+// rfce
 
-export default NotFound
+function NotFound() {
+  return <div>NotFound</div>;
+}
+export default NotFound;

@@ -1,7 +1,6 @@
-function Home() {
-  return (
-    <div>Home</div>
-  )
-}
+// rfce
 
-export default Home
+function Home() {
+  return <div>Home</div>;
+}
+export default Home;
