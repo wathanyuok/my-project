@@ -29,5 +29,7 @@
     "url": "https://github.com/wathanyuok/cc19-front-to-back-api/issues"
   },
   "homepage": "https://github.com/wathanyuok/cc19-front-to-back-api#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "prisma-erd-generator": "^2.0.4"
+  }
 }
