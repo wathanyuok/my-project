@@ -1,9 +1,16 @@
+// server/middlewares/error.js
 const handleErrors = (err, req, res, next) => {
-    // code
-    console.log("Step 3 handle Error");
-    res
-      .status(err.statusCode || 500)
-      .json({ message: err.message || "Something wrong!!" });
-  };
+  console.error(err.stack)
   
-  module.exports = handleErrors;
+  if (err.name === 'ValidationError') {
+    return res.status(400).json({ error: err.message })
+  }
+  
+  if (err.name === 'UnauthorizedError') {
+    return res.status(401).json({ error: 'กรุณาเข้าสู่ระบบ' })
+  }
+
+  res.status(500).json({ error: 'เกิดข้อผิดพลาดบางอย่าง' })
+}
+
+export default handleErrors
